@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
+:root{
+    --RED-BORDER: hsl(0, 78%, 62%);
+    --CYAN-BORDER:hsl(180, 62%, 55%);
+    --ORANGE-BORDER:hsl(34, 97%, 64%);
+    --BLUE-BORDER:hsl(212, 86%, 64%);
+    --Paragraph-color:hsl(229, 6%, 66%);
+    --BG-COLOR: hsl(0, 0%, 98%);
+    --BOX-SHADOW:hsl(0, 0%, 88%);
+   
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size:15px;
+    background-color:var(--BG-COLOR);
+}
+
+body{
+    display:grid;
+    min-height:100vh;
+    place-content: center;
+    font-size:15px;
+    font-family: 'Poppins', sans-serif;
+    padding:2.1rem;
+}
+
+header h1{
+    text-align:center;
+    font-weight:200;
+    font-size:1.7rem;
+    color:hsl(234, 12%, 34%);
+}
+
+header span{
+    font-weight:600;
+    color:hsl(234, 12%, 34%);
+    font-size:1.7rem;
+}
+
+header p{
+    color:var(--Paragraph-color);
+    text-align:center;
+    margin-top:0.5rem;
+}
+
+.icon{
+    max-width:100%;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:2rem;
+}
+
+.icon img{
+    height:auto;
+    margin:2rem 0 2rem 1rem;
+}
+
+.card{
+    margin-bottom:2rem;
+}
+
+.card h2{
+    font-size:1.6rem;
+    color: hsl(234, 12%, 34%);
+    padding:1.5rem 2rem 0 2rem;
+}
+
+.card p{
+    padding:0.5rem 2rem 0 2rem;
+    color:var(--Paragraph-color);
+    line-height:1.8rem;
+}
+
+.card-supervisor{
+    margin-top:4rem;
+    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+    border-radius:8px;
+    border-top:4px solid var(--CYAN-BORDER);
+}
+
+.team-builder{
+    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+    border-radius:8px;
+    border-top:4px solid var(--RED-BORDER);
+}
+
+.card-karma{
+    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+    border-radius:8px;
+    border-top:4px solid var(--ORANGE-BORDER);
+}
+
+.card-calculator{
+    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+    border-radius:8px;
+    border-top:4px solid var(--BLUE-BORDER);
+}
+
+footer p{ 
+    font-size: 0.8rem;
+    text-align: center; 
+}
+
+footer a { 
+    font-size: 0.8rem;
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:950px){
+    .card{
+        margin:0;
+        max-height:300px;
+        max-width:400px;
+
+    }
+
+    .container-fluid{
+        padding:3rem;
+        display:grid;
+        min-height:100vh;
+        place-content:center;
+    }
+
+    header h1, header span{
+        font-size:2.3rem;
+    }
+
+    header h1{
+        line-height:3rem;
+    }
+
+    header p{
+        padding-top:0.7rem;
+        width:600px;
+        margin:auto;
+        font-size:1.1rem;
+    }
+
+    .grid-container{
+        padding-inline:3rem;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap:1.3rem;
+        grid-template-areas: 
+        '. team-builder .'
+        'supervisor team-builder calculator'
+        'supervisor karma calculator'
+        '. karma .'
+        ;
+        margin-top:4rem;
+    }
+
+    .card-supervisor{
+        grid-area:supervisor;
+    }
+
+    .team-builder{
+        grid-area:team-builder;
+    }
+
+    .card-karma{
+        grid-area:karma;
+    }
+
+    .card-calculator{
+        grid-area:calculator;
+    }
+}
