@@ -78,25 +78,25 @@ header p{
 
 .card-supervisor{
     margin-top:4rem;
-    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+    box-shadow:1px 15px 20px hsla(212, 86%, 64%, 0.3);
     border-radius:8px;
     border-top:4px solid var(--CYAN-BORDER);
 }
 
 .team-builder{
-    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+     box-shadow:1px 15px 20px hsla(212, 86%, 64%, 0.3);
     border-radius:8px;
     border-top:4px solid var(--RED-BORDER);
 }
 
 .card-karma{
-    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+     box-shadow:1px 15px 20px hsla(212, 86%, 64%, 0.3);
     border-radius:8px;
     border-top:4px solid var(--ORANGE-BORDER);
 }
 
 .card-calculator{
-    box-shadow:1px 15px 20px var(--BOX-SHADOW);
+     box-shadow:1px 15px 20px hsla(212, 86%, 64%, 0.3);
     border-radius:8px;
     border-top:4px solid var(--BLUE-BORDER);
 }
